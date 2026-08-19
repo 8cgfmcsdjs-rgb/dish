@@ -447,3 +447,19 @@ h1,h2,h3,h4,p{margin:0;}
   .hero-cta .btn{justify-content:center;}
   .manifesto-lines .m-line{flex-direction:column; align-items:flex-start; gap:6px;}
 }
+/* ==========================================
+   DJILEN PRODUCT PHOTOGRAPHY
+   ========================================== */
+
+.product-image{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+    display:block;
+    transition:transform .45s ease;
+}
+
+.product-card:hover .product-image{
+    transform:scale(1.03);
+}
