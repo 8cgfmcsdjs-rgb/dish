@@ -7,7 +7,7 @@
 
 const DJILEN_PRODUCTS = [
   // ---------------- VARSITY JACKETS ----------------
-  { id:'vj-01', name:'Origin Varsity Jacket', dept:'men', type:'varsity-jackets', price:465, tint:'olive-ink', badge:'New', image:'asset/img/products/image.png', desc:'Wool body, leather sleeves, chest-embroidered DJ monogram with the signature diagonal opening.' },
+  { id:'vj-01', name:'Origin Varsity Jacket', dept:'men', type:'varsity-jackets', price:465, tint:'olive-ink', badge:'New', image:'assets/img/products/image.png', desc:'Wool body, leather sleeves, chest-embroidered DJ monogram with the signature diagonal opening.' },
   { id:'vj-02', name:'Legacy Varsity Jacket', dept:'women', type:'varsity-jackets', price:465, tint:'cream-charcoal', badge:'New', desc:'Cropped varsity cut in washed wool, satin lining, tonal monogram at the chest.' },
   { id:'vj-03', name:'Route Bomber Jacket', dept:'men', type:'varsity-jackets', price:495, tint:'charcoal-lime', badge:null, desc:'Satin bomber with a single diagonal seam running shoulder to hem.' },
   { id:'vj-04', name:'Heritage Varsity Jacket', dept:'women', type:'varsity-jackets', price:475, tint:'olive-cream', badge:'Limited', desc:'Two-tone panel construction split by a diagonal path line.' },
