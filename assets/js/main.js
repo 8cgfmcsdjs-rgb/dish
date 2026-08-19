@@ -66,12 +66,20 @@ function djilenRenderCard(p){
   const badge = p.badge ? `<span class="badge ${p.badge==='Limited' ? 'alt':''}">${p.badge}</span>` : '';
   return `
   <article class="product-card" data-id="${p.id}" data-dept="${p.dept}" data-type="${p.type}" data-price="${p.price}">
-    <div class="product-media" style="background:${djilenTintStyle(p.tint)}">
-      ${badge}
-      <div class="swatch">
-        <span class="mono-d">${djilenMark(58, markColor)}</span>
-      </div>
-      <span class="swatch-label">DJILEN &middot; ${p.dept.toUpperCase()}</span>
+    <div class="product-media" style="${p.image ? '' : `background:${djilenTintStyle(p.tint)}`}">
+    ${badge}
+
+    ${
+      p.image
+        ? `<img class="product-image" src="${p.image}" alt="${p.name}" loading="lazy">`
+        : `
+          <div class="swatch">
+            <span class="mono-dj">${djilenMark(58, markColor)}</span>
+          </div>
+          <span class="swatch-label">DJILEN · ${p.dept.toUpperCase()}</span>
+        `
+    }
+    <div class="quick-add">
       <div class="quick-add">
         <select aria-label="Select size for ${p.name}">
           ${djilenSizeOptions(p.type)}
