@@ -177,9 +177,16 @@ h1,h2,h3,h4,p{margin:0;}
    HERO — full-screen editorial
    ========================================================================== */
 .hero{position:relative; min-height:96vh; display:flex; flex-direction:column; justify-content:flex-end; padding-top:70px; padding-bottom:70px; border-bottom:1px solid var(--line); overflow:hidden;}
-.hero-bg{position:absolute; inset:0; z-index:0; background:
-  linear-gradient(180deg, rgba(19,18,16,.2), rgba(19,18,16,.85) 88%),
-  linear-gradient(-8deg, var(--olive) 0%, var(--ink) 46%);
+.hero-bg{
+    position:absolute;
+    inset:0;
+    z-index:0;
+    background:
+        linear-gradient(180deg, rgba(19,18,16,.25), rgba(19,18,16,.82) 88%),
+        url("../img/i.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
 }
 .hero-diagonal{position:absolute; inset:0; z-index:0; opacity:.9;}
 .hero-inner{position:relative; z-index:2;}
